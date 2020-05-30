@@ -17,6 +17,8 @@ var datac2=[];
 var change;
 
 
+// SECTION - 1
+// Function to convert Binary to Hexadecimal and viceversa
 function hex2bin(s){
 	var hex = "0123456789abcdef";
 	var bin = ["0000","0001","0010","0011","0100","0101","0110","0111","1000","1001","1010","1011","1100","1101","1110","1111"];
@@ -26,7 +28,6 @@ function hex2bin(s){
 	for(var i=0;i<s.length;i++) ans=ans+map1.get(s[i]);
 	return ans;
 }
-
 function bin2hex(s){
 	var hex = "0123456789abcdef";
 	var bin = ["0000","0001","0010","0011","0100","0101","0110","0111","1000","1001","1010","1011","1100","1101","1110","1111"];
@@ -45,6 +46,8 @@ function bin2hex(s){
 }
 
 
+// SECTION 2
+// Funnction to perform DES OPERATIONS
 function permute(k,arr,n){
 	var per="";
 	var i=0;
@@ -54,7 +57,6 @@ function permute(k,arr,n){
 	}
 	return per;
 }
-
 function shift_left(k,shifts){
 	var s="";
 	for(var i=0;i<shifts;i++){
@@ -67,7 +69,6 @@ function shift_left(k,shifts){
 	}
 	return k;
 }
-
 function xor_(a,b){
 	var ans="";
 	for(var i=0;i<a.length;i++){
@@ -78,7 +79,6 @@ function xor_(a,b){
 	}
 	return ans;
 }
-
 function encrypt(pt,rkb,rk){
 	pt=hex2bin(pt);
 	//console.log("68");
@@ -411,8 +411,12 @@ for(var i=0;i<len;i++){
 for(var i=0;i<16;i++){
 	datac[i]=(datac[i]*100)/len;
 	datap[i]=(datap[i]*100)/len;
-}
+	}
+	
 
+//SECTION 3
+// Plotting Avalanche effect
+//
 var Plaintext={
 	x: xs,
 	y: pq,
