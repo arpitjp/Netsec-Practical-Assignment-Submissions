@@ -414,7 +414,7 @@ for(var i=0;i<16;i++){
 	}
 	
 
-//SECTION 3
+// SECTION 3
 // Plotting Avalanche effect
 //
 var Plaintext={
@@ -511,7 +511,9 @@ output+="hexCiphertext= "+hexcipher;
 console.log("ciphertext= "+cipher);
 $("#ans").val(output);	
 /*
-/////////////////////////////////////  DECRYPTION
+
+// SECTION - 4
+// DECRYPTION
 rkb.reverse();
 rk.reverse();
 
