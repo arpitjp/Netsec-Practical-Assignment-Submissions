@@ -461,7 +461,7 @@ Plotly.newPlot('myDiv',da,layout);
 					        {y:datap[5]},
 					        {y:datap[6]},
 					        {y:datap[7]},
-							{y:datap[8]},
+						{y:datap[8]},
 					        {y:datap[9]},
 					        {y:datap[10]},
 					        {y:datap[11]},
