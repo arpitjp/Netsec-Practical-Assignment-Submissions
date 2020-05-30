@@ -527,8 +527,6 @@ string BDMid(string cipheriv, string ciphertext)
 
 string CBCencrypt(string plaintext)
 {
-
-    cout << "CBC ENCRYPT MODULE START--------" << endl;
     cout << "Plain Text received by CBC Encrypt: " << plaintext << endl;
     string hex_plaintext = textToHex(plaintext);
     int n = hex_plaintext.size();
@@ -567,17 +565,14 @@ string CBCencrypt(string plaintext)
             output_cipher = output_cipher.append(blockout_cipher);
         }
     }
-    cout << "Encryption SUMMARY--------" << endl;
-    cout << "Output Cipher Text by CBC Encrypt(HEX): " << (output_cipher) << endl;
+    cout << "\nOutput Cipher Text by CBC Encrypt(HEX): " << (output_cipher) << endl;
     cout << " " << endl;
     return output_cipher;
 }
 
 int main()
 {
-    //key used = "aabb09182736ccdd"
-    string plaintext;
-    cout << "Hello Tutor\nEnter plaintext to encrypt: ";
-    cin >> plaintext;
+    string plaintext = "";
+    plaintext = "Hello Tutors";
     CBCencrypt(plaintext);
 }
