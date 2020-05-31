@@ -1,12 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-
-# Cryptomath Module
-
 import random
 
 def gcd(a, b):
