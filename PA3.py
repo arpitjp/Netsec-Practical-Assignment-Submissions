@@ -1,5 +1,6 @@
 import random
 
+##### SECTION 1 - Subsidary Functions
 def gcd(a, b):
     # Returns the GCD of positive integers a and b using the Euclidean Algorithm.
     x, y = a, b
@@ -131,9 +132,11 @@ def modularSqrt(a, p):
     if isSquare(a, p):
         return pow(a, (p + 1) // 4, p)
     return None
-###############################33
+
 import random, hashlib
 
+
+##### SECTION 2 - Function to generate signature
 class Signer:
     
     def __init__(self):
@@ -172,7 +175,7 @@ class Signer:
     def verifyVoter(self, eligible):
         pass
         
- 
+##### SECTION 3 - Function to check eligibility of voter
 class Voter:
     def __init__(self, n, eligible):
         self.eligible = eligible
@@ -206,6 +209,7 @@ from tkinter import *
 from tkinter.ttk import *
 import random
 
+##### SECTION 4 - Main Function
 class poll:
     def __init__(self, ws):
         self.ws = ws
@@ -251,7 +255,7 @@ class poll:
             print("Hashed message: " + str(hashlib.sha256((str(message)+str(l)).encode('utf-8')).hexdigest()))
             print("Verification status: " + str(verificationStatus))
 
-       
+##### SECTION 5 - Home page
 class poll_machine:
     
     def __init__(self):
